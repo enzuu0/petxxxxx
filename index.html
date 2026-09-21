@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petshop — Tudo para o seu melhor amigo</title>
+  <meta name="description" content="Petshop completo: banho e tosa, veterinário, vacinação, produtos e acessórios. Projeto PWA - Etec São Mateus.">
+  <meta name="theme-color" content="#0f766e">
+
+  <!-- PWA: arquivo de configuração do aplicativo -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Ícones -->
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo" aria-label="Petshop - início">
+        <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true">
+          <g fill="currentColor">
+            <ellipse cx="18" cy="22" rx="7" ry="9"/>
+            <ellipse cx="32" cy="15" rx="7" ry="9"/>
+            <ellipse cx="46" cy="22" rx="7" ry="9"/>
+            <path d="M32 30c-9 0-16 8-16 15 0 5 4 8 8 8 3 0 5-1.4 8-1.4S37 53 40 53c4 0 8-3 8-8 0-7-7-15-16-15z"/>
+          </g>
+        </svg>
+        <span>Petshop</span>
+      </a>
+
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="botao-menu">Agendar</a>
+      </nav>
+
+      <button id="btn-menu" class="btn-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <p id="status-conexao" class="status online" role="status">Você está online</p>
+          <h1>Cuidado e carinho para o <span>seu melhor amigo</span></h1>
+          <p class="hero-sub">Banho e tosa, consultas veterinárias, vacinação e produtos de qualidade — tudo em um só lugar.</p>
+          <div class="hero-acoes">
+            <a href="#contato" class="botao botao-primario">Agendar serviço</a>
+            <a href="#produtos" class="botao botao-secundario">Ver produtos</a>
+          </div>
+          <ul class="hero-destaques">
+            <li><strong>12+</strong> anos de experiência</li>
+            <li><strong>8.500+</strong> pets atendidos</li>
+            <li><strong>4,9</strong> nota média</li>
+          </ul>
+        </div>
+        <div class="hero-arte" aria-hidden="true">
+          <div class="cartao-pata cartao-1">
+            <svg viewBox="0 0 64 64" width="64" height="64"><g fill="currentColor"><ellipse cx="18" cy="22" rx="7" ry="9"/><ellipse cx="32" cy="15" rx="7" ry="9"/><ellipse cx="46" cy="22" rx="7" ry="9"/><path d="M32 30c-9 0-16 8-16 15 0 5 4 8 8 8 3 0 5-1.4 8-1.4S37 53 40 53c4 0 8-3 8-8 0-7-7-15-16-15z"/></g></svg>
+            <div><strong> shampoo premium</strong><span>Banho relaxante</span></div>
+          </div>
+          <div class="cartao-pata cartao-2">
+            <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 30 32 12l20 18"/><path d="M18 28v20h28V28"/><path d="M27 48V38h10v10"/></svg>
+            <div><strong>Espaço amplo</strong><span>Recreação diária</span></div>
+          </div>
+          <div class="cartao-pata cartao-3">
+            <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 52s-20-12-20-27a11 11 0 0 1 20-6 11 11 0 0 1 20 6c0 15-20 27-20 27z"/></svg>
+            <div><strong>Equipe dedicada</strong><span>Cuidado com o pet</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section id="servicos" class="secao secao-alt">
+      <div class="container">
+        <h2>Nossos serviços</h2>
+        <p class="secao-sub">Preços justos e profissionais experientes.</p>
+        <div class="grade grade-4">
+          <article class="cartao">
+            <div class="cartao-icone i-teal">
+              <svg viewBox="0 0 64 64" width="28" height="28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 10c8 10 14 17 14 25a14 14 0 0 1-28 0c0-8 6-15 14-25z"/></svg>
+            </div>
+            <h3>Banho e Tosa</h3>
+            <p>Higiene completa, corte na tesoura ou máquina e secagem cuidadosa.</p>
+            <p class="preco">A partir de <strong>R$ 60</strong></p>
+          </article>
+          <article class="cartao">
+            <div class="cartao-icone i-orange">
+              <svg viewBox="0 0 64 64" width="28" height="28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="20"/><path d="M32 22v20M22 32h20"/></svg>
+            </div>
+            <h3>Atendimento Veterinário</h3>
+            <p>Consultas, exames e acompanhamento da saúde do seu pet.</p>
+            <p class="preco">A partir de <strong>R$ 120</strong></p>
+          </article>
+          <article class="cartao">
+            <div class="cartao-icone i-teal">
+              <svg viewBox="0 0 64 64" width="28" height="28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M32 54s-22-13-22-29a12 12 0 0 1 22-7 12 12 0 0 1 22 7c0 16-22 29-22 29z"/></svg>
+            </div>
+            <h3>Vacinação</h3>
+            <p>Carteira de vacinas em dia, com lembrete de reforço por mensagem.</p>
+            <p class="preco">A partir de <strong>R$ 80</strong></p>
+          </article>
+          <article class="cartao">
+            <div class="cartao-icone i-orange">
+              <svg viewBox="0 0 64 64" width="28" height="28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="20" r="8"/><path d="M12 52c2-10 10-16 20-16s18 6 20 16"/></svg>
+            </div>
+            <h3>Adestramento</h3>
+            <p>Educação, obediência básica e socialização com reforço positivo.</p>
+            <p class="preco">A partir de <strong>R$ 150</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUTOS ===== -->
+    <section id="produtos" class="secao">
+      <div class="container">
+        <h2>Produtos em destaque</h2>
+        <p class="secao-sub">Rações, brinquedos e acessórios com entrega no mesmo dia.</p>
+        <div class="grade grade-4">
+          <article class="cartao cartao-produto">
+            <span class="selo">Mais vendido</span>
+            <div class="produto-arte p-teal" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="20" width="36" height="30" rx="4"/><path d="M14 28h36M28 20v30"/></svg>
+            </div>
+            <h3>Ração Premium 15 kg</h3>
+            <p class="produto-tipo">Cães adultos - todas as raças</p>
+            <p class="preco"><strong>R$ 189,90</strong></p>
+          </article>
+          <article class="cartao cartao-produto">
+            <div class="produto-arte p-orange" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="36" r="10"/><circle cx="42" cy="26" r="8"/><path d="M32 46l6 8"/></svg>
+            </div>
+            <h3>Kit Brinquedos</h3>
+            <p class="produto-tipo">Bola, mordedor e corda</p>
+            <p class="preco"><strong>R$ 49,90</strong></p>
+          </article>
+          <article class="cartao cartao-produto">
+            <div class="produto-arte p-teal" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 30h40a0 0 0 0 1 0 0 20 12 0 0 1-40 0z"/><path d="M16 30v-6h32v6"/></svg>
+            </div>
+            <h3>Cama Confortável</h3>
+            <p class="produto-tipo">Tamanho M - lavável</p>
+            <p class="preco"><strong>R$ 129,90</strong></p>
+          </article>
+          <article class="cartao cartao-produto">
+            <div class="produto-arte p-orange" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="18" r="6"/><path d="M32 24v18M32 42c-6 0-10 4-10 8h20c0-4-4-8-10-8z"/></svg>
+            </div>
+            <h3>Coleira + Guia</h3>
+            <p class="produto-tipo">Resistente e confortável</p>
+            <p class="preco"><strong>R$ 39,90</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="secao secao-alt">
+      <div class="container sobre-conteudo">
+        <div class="sobre-texto">
+          <h2>Sobre o Petshop</h2>
+          <p>Há mais de 12 anos cuidamos de cães e gatos do bairro como se fossem nossos. Nossa equipe é formada por veterinários, banhistas e adestradores apaixonados por animais.</p>
+          <p>Este site é um <strong>Progressive Web App</strong>: pode ser instalado na tela inicial do celular e também funciona <strong>offline</strong>.</p>
+        </div>
+        <ul class="sobre-numeros">
+          <li><strong>12+</strong><span>anos de experiência</span></li>
+          <li><strong>8.500+</strong><span>pets atendidos</span></li>
+          <li><strong>4,9</strong><span>avaliação média</span></li>
+          <li><strong>100%</strong><span>online e offline</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="secao">
+      <div class="container contato-conteudo">
+        <div class="contato-info">
+          <h2>Agende um serviço</h2>
+          <p>Preencha o formulário e retornaremos pelo WhatsApp para confirmar horário.</p>
+          <ul class="contato-lista">
+            <li><strong>Endereço:</strong> Rua das Flores, 123 - São Mateus, SP</li>
+            <li><strong>Horário:</strong> Seg a Sáb, das 8h às 19h</li>
+            <li><strong>Telefone:</strong> (11) 98765-4321</li>
+          </ul>
+        </div>
+        <form id="form-agendamento" class="formulario">
+          <label for="f-nome">Seu nome</label>
+          <input id="f-nome" name="nome" type="text" required autocomplete="name" placeholder="Maria Silva">
+
+          <label for="f-telefone">Telefone / WhatsApp</label>
+          <input id="f-telefone" name="telefone" type="tel" required autocomplete="tel" placeholder="(11) 91234-5678">
+
+          <label for="f-servico">Serviço desejado</label>
+          <select id="f-servico" name="servico" required>
+            <option value="">Selecione...</option>
+            <option>Banho e Tosa</option>
+            <option>Atendimento Veterinário</option>
+            <option>Vacinação</option>
+            <option>Adestramento</option>
+          </select>
+
+          <label for="f-msg">Observações (opcional)</label>
+          <textarea id="f-msg" name="mensagem" rows="3" placeholder="Ex.: meu pet é um golden de 3 anos"></textarea>
+
+          <button type="submit" class="botao botao-primario">Enviar pedido</button>
+          <p id="form-aviso" class="form-aviso" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p><strong>Petshop</strong> — Projeto PWA • Etec São Mateus</p>
+      <p>Site feito com HTML, CSS e JavaScript. Funciona offline!</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
