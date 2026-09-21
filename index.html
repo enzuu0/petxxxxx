@@ -57,6 +57,10 @@
           <div class="hero-acoes">
             <a href="#contato" class="botao botao-primario">Agendar serviço</a>
             <a href="#produtos" class="botao botao-secundario">Ver produtos</a>
+            <button id="btn-instalar" class="botao botao-instalar" type="button" hidden>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              Instalar App
+            </button>
           </div>
           <ul class="hero-destaques">
             <li><strong>12+</strong> anos de experiência</li>
@@ -229,6 +233,24 @@
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- Modal de instruções para instalar no iPhone/iPad (Safari iOS não tem beforeinstallprompt) -->
+  <div id="modal-instalacao" class="modal-fundo" role="dialog" aria-modal="true" aria-labelledby="modal-instalacao-titulo" hidden>
+    <div class="modal-conteudo" role="document">
+      <button id="modal-fechar" class="modal-fechar" type="button" aria-label="Fechar">&times;</button>
+      <div class="modal-icone" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+      </div>
+      <h2 id="modal-instalacao-titulo">Instalar no iPhone/iPad</h2>
+      <p>Para instalar o Petshop no seu iPhone:</p>
+      <ol class="modal-passos">
+        <li>Toque no botão <strong>Compartilhar</strong> <span class="icone-compartilhar" aria-hidden="true">⌃</span> do Safari.</li>
+        <li>Selecione <strong>"Adicionar à Tela de Início"</strong>.</li>
+        <li>Toque em <strong>Adicionar</strong>.</li>
+      </ol>
+      <button id="modal-ok" class="botao botao-primario modal-ok" type="button">Entendi</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

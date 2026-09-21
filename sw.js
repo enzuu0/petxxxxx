@@ -1,5 +1,5 @@
 // Nome do cache - mude se atualizar o site
-const CACHE_NAME = 'petshop-pwa-v1';
+const CACHE_NAME = 'petshop-pwa-v2';
 
 // Arquivos que serão salvos para usar offline
 // (caminhos relativos com './' para funcionar no GitHub Pages)
